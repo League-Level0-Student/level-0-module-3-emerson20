@@ -12,9 +12,17 @@ public class BananaQuiz
 		//1. ask the user if they like bananas
 		String ask = JOptionPane.showInputDialog("Do you like bananas?");
 		//2. if they say no, 
+		if (ask.equals("no")) {
+			JOptionPane.showMessageDialog(null, "You are absolutly crazy!");
+			System.exit(0);
+		}
 			//tell them they are crazy 
 			//and end quiz
 		//3. if they say yes
+		if (ask.equals("yes")) {
+			String yes = JOptionPane.showInputDialog("What is your favorite hobby? Please spell with a capital letter.");
+			JOptionPane.showMessageDialog(null, yes +" is much better with bananas.");
+		}
 		//	ask them what is their favorite hobby
 		//	show a pop up that says "<your hobby> is much better with bananas!"
 
